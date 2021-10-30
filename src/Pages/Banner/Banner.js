@@ -9,13 +9,25 @@ const Banner = () => {
       <Carousel id="banner" variant="dark" fade>
         <Carousel.Item>
           {/* <h2> text</h2> */}
-          <img className="d-block w-100"  src={bannerImg1} alt="First slide" />
+          <img className="d-block w-100" src={bannerImg1} alt="First slide"  />
+          <Carousel.Caption className="mb-5 pb-5 carousel-caption text-light  fw-bold">
+            <h3 className="fw-bold fs-1">EXPERIENCE OMAN WITH ZAHARA TOURS</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={bannerImg2} alt="Second slide" />
+          <Carousel.Caption className="mb-5 pb-5 carousel-caption text-light fw-bold">
+            <h3 className="fw-bold  fs-1">EXPERIENCE OMAN WITH ZAHARA TOURS</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={bannerImg3} alt="Third slide" />
+          <img className="d-block  w-100" src={bannerImg3} alt="Third slide" />
+          <Carousel.Caption className="mb-5 pb-5 carousel-caption text-light fw-bold">
+            <h3 className="fw-bold fs-1">EXPERIENCE OMAN WITH ZAHARA TOURS</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     );

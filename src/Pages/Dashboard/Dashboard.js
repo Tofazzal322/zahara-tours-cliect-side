@@ -5,7 +5,7 @@ import ManageTours from "../ManageTours/ManageTours";
 import ManageAllService from "../ManageAllService/ManageAllService";
 
 const Dashboard = () => {
-  const [control, setControl] = useState("manageTours");
+  const [control, setControl] = useState("myBooking");
   return (
     <div className="admin-container">
       <div className="dashboard">
@@ -19,7 +19,7 @@ const Dashboard = () => {
                 <hr />
                 <div className="all-menu mt-5">
                   <li
-                    onClick={() => setControl("MyBooking")}
+                    onClick={() => setControl("myBooking")}
                     className="admin-menu  ms-5 pb-3"
                   >
                     Manage My Booking
@@ -35,24 +35,22 @@ const Dashboard = () => {
                     onClick={() => setControl("AddServices")}
                     className="admin-menu  ms-5 pb-3 "
                   >
-                    Add New Services
+                    Add New Package
                   </li>
                   <li
                     onClick={() => setControl("ManageAllService")}
                     className="admin-menu  ms-5 "
                   >
-                    Manage All Service
+                    Manage All Packages
                   </li>
                 </div>
               </div>
             </div>
             <div className="col-md-9  ">
-              {control === "MyBooking" && <MyBooking></MyBooking>}
+              {control === "myBooking" && <MyBooking></MyBooking>}
               {control === "manageTours" && <ManageTours></ManageTours>}
               {control === "AddServices" && <AddServices></AddServices>}
-              {control === "ManageAllService" && (
-                <ManageAllService></ManageAllService>
-              )}
+              {control === "ManageAllService" && <ManageAllService></ManageAllService> }
             </div>
           </div>
         </div>

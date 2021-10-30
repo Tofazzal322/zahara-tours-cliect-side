@@ -18,8 +18,7 @@ const Packages = () => {
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  {item.description.slice(0,100)}
                 </Card.Text>
                <Link to={`/booking2/${item._id}`}>
                     <Button className="bookingBtn mt-3" variant="primary">

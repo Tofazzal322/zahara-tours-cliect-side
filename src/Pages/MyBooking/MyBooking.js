@@ -1,19 +1,20 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
-import { Col, Row,} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import useFirebase from "../../hooks/useFirebase";
 
 const MyBooking = () => {
   const { user } = useFirebase();
-  //   console.log(user.email);
+  // const { data, setData } = useState;
+    console.log(user.email);
   const [myBooking, setMyBooking] = useState([]);
 
   //  Booking option
   useEffect(() => {
-    fetch(`https://damp-castle-34013.herokuapp.com/${user?.email}`)
+    fetch(`https://damp-castle-34013.herokuapp.com/booking/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setMyBooking(data));
-  }, [user.email]);
+  }, [user?.email]);
 
   //   console.log(myBooking);
 
@@ -27,12 +28,12 @@ const MyBooking = () => {
       .then((data) => {
         console.log(data);
 
-        if (data.deleteCount == 1) {
+        if (data.deleteCount !== 1) {
           const remaining = myBooking.filter((booking) => booking._id !== id);
           setMyBooking(remaining);
+
           alert("Successfully deleted one document.");
-        } 
-         else {
+        } else {
           alert("No documents matched the query. Deleted 0 documents.");
         }
       });

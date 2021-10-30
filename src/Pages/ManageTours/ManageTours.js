@@ -1,15 +1,49 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Modal, Row } from "react-bootstrap";
 
 //////////////////////////////////////////////////
 const ManageTours = () => {
   const [manageTours, setManageTours] = useState([]);
+
   useEffect(() => {
     fetch("https://damp-castle-34013.herokuapp.com/booking")
       .then((res) => res.json())
       .then((data) => setManageTours(data));
   }, [manageTours]);
+
+  
+//  Modal Start 
+  function Example() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
 
   /////////////// /////////////////////////////////
   const handleDelete = (id) => {
@@ -20,9 +54,10 @@ const ManageTours = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.deleteCount == 1) {
+        if (data.deleteCount !== 1) {
           const remaining = manageTours?.filter((booked) => booked._id !== id);
           setManageTours(remaining);
+        
           alert("Successfully deleted one document.");
         }
         else {
@@ -34,7 +69,7 @@ const ManageTours = () => {
 
   return (
     <div>
-      <h2 className="text-center mt-2 mb-3"> MANAGE ALL TOURS & PACKAGES </h2>
+      <h2 className="text-center mt-2 mb-3"> MANAGE ALL BOOKING</h2>
       <h3 className="text-center">
         TOTAL ITEMS: -{" "}
         <span className="text-danger fs-1 fw-bold"> {manageTours.length}</span>

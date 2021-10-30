@@ -236,3 +236,7 @@ transition: 500ms;
 .item-img{
     height:230px;
 }
+
+.carousel-caption{
+    margin-bottom: 200px;
+}
