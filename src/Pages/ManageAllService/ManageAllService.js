@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 const ManageAllService = () => {
 const [managePackages, setManagePackages] = useState([]);
   // const [data, setData] = useState([]);
-  // console.log(data);
+  console.log(managePackages);
 
   useEffect(() => {
     // fetch('/data.json')
