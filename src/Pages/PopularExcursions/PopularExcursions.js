@@ -7,7 +7,7 @@ import useData from '../../hooks/useData';
 const PopularExcursions = () => {
     const { data } = useData();
     return (
-        <div className="bg-warning p-5 ">
+        <div className="bg-info p-5 ">
       <h1 className="bookingBtn pb-4 text-center"> POPULAR EXCURSIONS</h1>
       <Row>
         {data
