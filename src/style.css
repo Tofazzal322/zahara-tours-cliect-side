@@ -232,3 +232,7 @@
 transition: 500ms;
     box-shadow: 5px 10px 40px rgb(167, 167, 167);
 }
+
+.item-img{
+    height:230px;
+}

@@ -10,14 +10,14 @@ const AddServices = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    // axios.post("http://localhost:5000/services", data).then((res) => {
+    // axios.post("http://localhost:5000/packages", data).then((res) => {
     //   if (res.data.insertedId) {
     //     alert("added successfully");
     //     reset();
     //   }
     // })
 
-    fetch("http://localhost:5000/services", {
+    fetch("https://damp-castle-34013.herokuapp.com/packages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

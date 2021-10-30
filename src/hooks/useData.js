@@ -6,7 +6,7 @@ const useData = () => {
 
   useEffect(() => {
     // fetch('/data.json')
-    fetch("http://localhost:5000/packages")
+    fetch("https://damp-castle-34013.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => {
         if (!data) {

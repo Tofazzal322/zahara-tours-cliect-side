@@ -6,14 +6,14 @@ import { Col, Row } from "react-bootstrap";
 const ManageTours = () => {
   const [manageTours, setManageTours] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/booking")
+    fetch("https://damp-castle-34013.herokuapp.com/booking")
       .then((res) => res.json())
       .then((data) => setManageTours(data));
   }, [manageTours]);
 
   /////////////// /////////////////////////////////
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/booking/${id}`;
+    const url = `https://damp-castle-34013.herokuapp.com/booking/${id}`;
     fetch(url, {
       method: "DELETE",
     })

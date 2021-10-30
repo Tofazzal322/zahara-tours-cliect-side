@@ -19,7 +19,7 @@ const MyBooking = () => {
 
   // Delete option
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/booking/${id}`;
+    const url = `https://damp-castle-34013.herokuapp.com/booking/${id}`;
     fetch(url, {
       method: "DELETE",
     })

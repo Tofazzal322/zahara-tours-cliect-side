@@ -24,7 +24,7 @@ const Booking = () => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    fetch("http://localhost:5000/booking", {
+    fetch("https://damp-castle-34013.herokuapp.com/booking", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

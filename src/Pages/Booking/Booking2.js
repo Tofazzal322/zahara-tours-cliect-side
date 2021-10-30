@@ -15,7 +15,7 @@ const Booking2 = () => {
 
   // /////// Specific items Api//////////////
   useEffect(() => {
-    const url = `http://localhost:5000/packages/${bookId2}`;
+    const url = `https://damp-castle-34013.herokuapp.com/packages/${bookId2}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPackages(data));
@@ -26,7 +26,7 @@ const Booking2 = () => {
   // ////////////// Booking submit //////////////////////////////
   const onSubmit = (data) => {
     // console.log(data);
-    fetch("http://localhost:5000/booking", {
+    fetch("https://damp-castle-34013.herokuapp.com/booking", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
