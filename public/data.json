@@ -1,0 +1,216 @@
+[
+    {
+        "location":"NIZWA, JEBEL AKHDHAR",
+        "img":"https://i.ibb.co/ZNpn7qd/Jabel-al-akhdar-230-400.jpg",
+        "title": "Al Hoota Cave",
+        "duration":"8 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA4536EJ",
+        "categories":"POPULAR-TOURS",
+        "id":"45782454",
+        "price":"OMR 128",
+        "description":" One of the most popular day tours in Oman is the one involving a visit to the ancient Al Hoota Caves in Nizwa.We depart from Muscat towards the Nizwa region where we will first visit the famous Nizwa Fort for a tour. "
+
+    },
+    {
+        "location":"MUSCAT",
+        "img":"https://i.ibb.co/YQJvs5j/Amazing-Dolphins-450-750.jpg",
+        "title": "Amazing Dolphins",
+        "duration":"4 Hours",
+        "day":" 7 Days (Available on all days)",
+        "key":"TWA4546ER",
+        "categories":"POPULAR-TOURS",
+        "id":"65468775",
+        "price":"OMR 20",
+        "description":"If you’re looking to get a feel of and explore the desert of Oman the Wahiba Wilderness Tour is must do.After a drive from Muscat, we arrive at a vast expanse of desert which is part of the Al Sharqiya Sands of Oman, also known as the Wahiba Sands or Ramlat al Wahiba."
+    },
+    {
+        "location":"WAHIBA SANDS",
+        "img":"https://i.ibb.co/QQ3hXvT/Omans-Grand-Canyon-5-230-400.jpg",
+        "title": "Wahiba Wilderness",
+        "duration":"9 Hours",
+        "day":"Available on all days",
+        "key":"TWA4556EH",
+        "categories":"POPULAR-TOURS",
+        "id":"65468723",
+        "price":"OMR 152",
+        "description":"If you’re looking to get a feel of and explore the desert of Oman the Wahiba Wilderness Tour is must do.After a drive from Muscat, we arrive at a vast expanse of desert which is part of the Al Sharqiya Sands of Oman, also known as the Wahiba Sands or Ramlat al Wahiba. "
+    },
+    {
+        "location":"NIZWA, JEBEL AKHDAR",
+        "img":"https://i.ibb.co/2qbm6cC/Amazing-Dolphins-4-230-400-1.jpg",
+        "title": "Jabel al Akhdar",
+        "duration":"8 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA4566EW",
+        "categories":"POPULAR-TOURS",
+        "id":"6857327",
+        "price":"OMR 148",
+        "description":"The tour begins as we travel from Muscat towards the Nizwa region where we will first visit the famous Nizwa Fort for a tour. This seventeenth century fort, is one of the best representatives of the architecture of its time and is famous for its circular main tower, one of the largest of its kind. After a visit to Nizwa Fort fort), we make a quick visit to the Nizwa Souq (marketplace). You will find many interesting items at the Nizwa market; from traditional khanjars(daggers), to local handicrafts and jewellery. If you visit on a Friday you can even witness a cattle auction here."
+    },
+    {
+        "location":"WADI AL NAKHR",
+        "img":"https://i.ibb.co/rZhJPV0/Al-hoota-Caves-230-400.jpg",
+        "title": "Oman's Grand Canyon",
+        "duration":"9 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA4586EN",
+        "categories":"POPULAR-TOURS",
+        "price":"OMR 137",
+        "id":"8765435",
+        "description":"Drive to the foothills of the Jebel Akhdar mountain range. Our first stop is at the Nizwa Souq famed for its Antiques and silver jewelry. Visit the Round Tower Fort before proceeding ahead. Our next stop takes us to Wadi Nakher located in the depth of our deepest canyon. "
+        
+    },
+    {
+        "location":"AL KHATIM",
+        "img":"https://i.ibb.co/g4dwmnJ/adventure-tour-Jabal-Akhdar-Hiking-Tours-2-230-400.jpg",
+        "title": "Balcony Walk",
+        "duration":"6 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA4596ED",
+        "categories":"POPULAR-TOURS",
+        "id":"6543272",
+        "price":"OMR 159",
+        "description":"This is a short three-hour tour. Post breakfast head down to down to Al Hamra where you meet up with the hiking guide. Drive up to Al Khatim in your personal vehical, where you will start walking with the hiking guide towards the abandoned village walk. It’s a pleasant hike along the mountain paths and the group will eventually return to Khatim for lunch. "
+    },
+
+
+
+    {
+        "location":"MISFAT AL ABRIYYIN",
+        "img":"https://i.ibb.co/YQRdn7w/Under-the-Stars-Wahiba-Sands-2-95-130.jpg",
+        "title": "Mountain Oasis Hiking Tour",
+        "duration":"5 To 6 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"AWA45786EL",
+        "categories":"ADVENTURE-TOURS",
+        "id":"8752344",
+        "price":"OMR 210",
+        "description":"The Mountain Oasis Hiking Tour takes us on a narrow hiking trail through the foothills in Al Hamra to visit the mountain village of Misfat Al Abriyyin, down to the old town of Al Hamra and then back to The View, where we started the tour from."
+    },
+    {
+        "location":"BIRKAT SHARAF",
+        "img":"https://i.ibb.co/GMKF6Zd/Ash-Shuwaymiyah-3-450-750.jpg",
+        "title": "Mountain Hike",
+        "duration":" 6 to 7 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"AWA459756EF",
+        "categories":"ADVENTURE-TOURS",
+        "id":"897321345",
+        "price":"OMR 230",
+        "description":"Post breakfast time pick up the guide from Al Hamra and drive up to Sharaf al Alamayn, which is also known as Birkat Sharaf. The hike begins here with the group following the path down to the quaint village of Misfah AlAbriyin. The group will break for a picnic style lunch along the way to keep our energy up."
+    },
+    {
+        "location":"AL AQUR",
+        "img":"https://i.ibb.co/znDkGkK/adventure-tour-Old-Village-Hiking-Tour-1-230-400-1.jpg",
+        "title": "Village Walk",
+        "duration":"1.5 - 2.5 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"AWA457626EO",
+        "categories":"ADVENTURE-TOURS",
+        "id":"8735213",
+        "price":"OMR 55",
+        "description":"Meetup with the guide at 2000m by Sahab Hotel, Jebel Akhdar, Alila Resort. The group will have to be driven to Al Aqur where the hike begins."
+    },
+    {
+        "location":"AL KHATIM",
+        "img":"https://i.ibb.co/wQKXKXw/Dolphin-watching-in-Salalah-5-350-610.jpg",
+        "title": "Rim Hike",
+        "duration":"3 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"AWA45456EQ",
+        "categories":"ADVENTURE-TOURS",
+        "id":"9873543",
+        "price":"OMR 90",
+        "description":"Drive to Al Hamra and pick up the hiking guide and drive up to Al Khatim. The guests will walk with the enjoying the magnificent views of the Jabel Shams mountain and an Ariel view of Wadi Ghul."
+    },
+    {
+        "location":"AL HAMRA",
+        "img":"https://i.ibb.co/8Kvqvst/Nouvelle-Nakhl-experience-5-350-610.jpg",
+        "title": "Heritage Hiking Tour",
+        "duration":"5 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TGA45646EG",
+        "categories":"SERVICES",
+        "id":"6873215",
+        "price":"OMR 80",
+        "description":"The Heritage Hiking Tour takes us on an easy hiking trail through the foothills in Al Hamra. We will hike on easy paths and small trails, which are suitable for beginners also."
+    },
+    {
+        "location":"EASTERN PASS",
+        "img":"https://i.ibb.co/3TZC1n9/Jebel-Safari-Tour-1-350-610.jpg",
+        "title": "Mountain Top Hiking Tour",
+        "duration":"5- 6 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TGA45766EG",
+        "categories":"SERVICES",
+        "id":"76545554",
+        "price":"OMR 180",
+        "description":"We meet up at Al Hamra and are driven to the eastern pass from where we start the Mountain Hiking Tour. The pass lies at an altitude of 2000m, and the hiking route here is fairly diverse, with the path shifting suddenly from wide roads to narrow walking paths."
+    },
+
+
+    {
+        "location":"ACROSS OMAN",
+        "img":"https://i.ibb.co/YRz0B01/tour4-350-610.jpg",
+        "title": "Discover Oman Tour",
+        "duration":"10 Day/ 9 Nights",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA4746EG",
+        "categories":"SERVICES",
+        "id":"68973547",
+        "price":"OMR 1200",
+        "description":"Discover the Beauty of Oman with our ten day Oman tour package covering all the major sights and places to visit in Oman. From coastal villages and ancients forts, to the UNESCO World Heritage sites like the Frankincense Trail. Experience it all with Zahara Tours."
+    },
+    {
+        "location":"Jabal Akhdar",
+        "img":"https://i.ibb.co/QvJ4XZM/adventure-tour-Mountain-Top-Hiking-Tour-4-450-750.jpg",
+        "title": "Discover the wonders of Nature - Jabal Akhdar",
+        "duration":"10 Hours",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TGA45773EG",
+        "categories":"SERVICES",
+        "id":"97332474",
+        "price":"OMR ",
+        "description":"Tour of Nizwa Round Tower Fort (Photostop) & the Nizwa Souk.Visit the villageof Birkat Al Mauz & explore date plantations.Drive through winding roads from Wadi Al Madeen to Jebel AkhdarWatch the famous Jabal Al Akhdar roses in bloom(seasonal).Explore terrace style fruit orchards, natural springs, aflaj irrigation system & amazing view on the mountain."
+    },
+    {
+        "location":"HAIL AL SHAS",
+        "img":"https://i.ibb.co/kmQt5vh/Wahiba-Wilderness-2-450-750.jpg",
+        "title": "Ultimate Escape - The View Oman",
+        "duration":"02 Days / 01 Night",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TGA45796EG",
+        "categories":"SERVICES",
+        "id":"897654547",
+        "price":"OMR 340",
+        "description":"01-night stay on HB in a Superior on twin / double sharing basis at The View"
+    },
+    {
+        "location":"WAHIBA SANDS",
+        "img":"https://i.ibb.co/4fk6tkB/Under-the-Stars-Wahiba-Sands-350-610.jpg",
+        "title": "Under the Stars - Wahiba Sands",
+        "duration":"02 Days / 01 Night",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA45366EG",
+        "categories":"SERVICES",
+        "id":"89732473",
+        "price":"OMR 240",
+        "description":"1-night Stay in Standard Room on twin / double basis at Desert Nights Camp Breakfast & Dinner"
+
+    },
+    {
+        "location":"Muscat",
+        "img":"https://i.ibb.co/RCLcbYn/Wadi-Arbayeen-3-450-750.jpg",
+        "title": "Northern Oman - Self Drive 4WD",
+        "duration":"08 Days / 07 Nights",
+        "day":" Friday & Saturday at 7AM",
+        "key":"TWA45256EG",
+        "categories":"SERVICES",
+        "id":"98567454",
+        "price":"OMR 670",
+        "description":"Muscat offers the visitor a unique opportunity to witness a modern commercial centre existing in harmony with its traditional culture. With its natural harbour, Muscat means “Anchorage” & lies in a natural volcanic bowl. Our tour of the Grand Mosque (Ladies fully covered with scarf and shorts not allowed for men) (except  Friday) & the Bait Al Zubair Museum   (Except Friday) is a brief introduction that traces Oman’s history and   development. Drive along the waterfront Corniche visiting the Fish Market."
+    }
+    
+    
+]

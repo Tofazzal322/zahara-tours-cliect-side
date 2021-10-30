@@ -1,0 +1,234 @@
+/*  MenuBar style  */
+
+.nav-brand{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size:30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-items{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size:16px;
+}
+
+.menu-bg{
+    background-color: rgb(0 101 118);
+}
+
+.nav-items-btn{
+    /* background-color: burlywood; */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0%;
+    
+}
+
+/*  MenuBar style  */
+
+
+/* Booking style */
+.request-btn{
+    width: 50%;
+    border: none;
+    background-color:#006576 ;
+    color: white;
+    font-weight: 700;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.reset-btn{
+    margin-left: 5px;
+    width: 25%;
+    border: none;
+    background-color:#006576 ;
+    color: white;
+    font-weight: 700;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.booking-form{
+    border: 1px solid rgb(235, 231, 231);
+    /* background-color: #34474b; */
+    
+}
+
+.appointment-header{
+    padding-top: 10px;
+    margin-top: 10px;
+    /* text-align: left; */
+    color:#006576 ;
+    font-weight: 700;
+}
+/* Booking style */
+
+
+/*  Footer Style start */
+
+.footer-main{
+    text-align: left;
+    background-color: rgb(0 101 118);
+}
+
+.footer-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*  Footer style end */
+
+
+/* Login Style */
+.login-header{
+    color:#418f9c ;
+    font-weight: 700;
+}
+
+.login-from{
+    color: #006576;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.login-btn{
+    width: 100%;
+    border: none;
+    background-color:#006576 ;
+    color: white;
+    font-weight: 700;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.google-btn{
+    /* border: none; */
+    /* background-color: crimson; */
+}
+
+.forget-pass{
+    /* text-align: auto; */
+    /* background-color: crimson; */
+    justify-content: right;
+    /* margin-block-end: 0; */
+    margin-left: 250px;
+}
+
+/*  Service style */
+
+.services-title{
+    color: #006576;
+   font-family: 'Roboto', sans-serif;
+}
+
+.readMore-btn{
+    width: 100%;
+    border: none;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.readMore-btn:hover{
+    color: #ffffff;
+    background-color:#006576 ;
+    font-weight: 700;
+}
+
+/*  About Style */
+.about-main{
+    background-color: #e0e8e9;
+    background-image: url();
+}
+
+.bookingBtn{
+    border: none;
+    background-color: #006576;
+    padding: 5px 15px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    /* border-radius: 5px; */
+}
+
+.horizontal-row{
+    height: 10px;
+    background-color: aliceblue
+}
+
+/* Dashboard style */
+.admin-area {
+  background: rgb(4, 51, 70);
+  color: white;
+  height: 100vh;
+}
+.admin-container {
+  overflow-x: hidden;
+}
+.admin-menu {
+    text-align: left;
+    font-size: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+  color: rgb(255, 208, 0);
+}
+.admin-menu:hover {
+  color: rgb(255, 0, 0);
+}
+
+
+/* Add service style */
+.addService-container{
+    width: 75%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+/* Price style  */
+.price{
+    
+    font-weight: bold;
+    color: rgb(189, 20, 5);
+    margin-left: 60px;
+    /* justify-content: right; */
+    /* align-items: flex-end; */
+    /* text-align: right !important; */
+}
+
+.duration{
+    display: inline-flex;
+    /* align-items: flex-start; */
+}
+
+.all-title{
+    color: #006576 ;
+    /* background-color:#006576 ; */
+    font-weight:bold;
+    font-size: large;
+}
+
+.price-header{
+    background-color: #006576;
+    color: rgb(255, 255, 255);
+    padding-top: 1px;
+    /* padding-bottom: 1px; */
+}
+
+.categories{
+    font-weight: bold;
+    color: #ecb605;
+}
+
+.service-card:hover{
+transition: 500ms;
+    box-shadow: 5px 10px 40px rgb(167, 167, 167);
+}
