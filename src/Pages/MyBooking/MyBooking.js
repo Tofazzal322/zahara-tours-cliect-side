@@ -10,7 +10,7 @@ const MyBooking = () => {
 
   //  Booking option
   useEffect(() => {
-    fetch(`http://localhost:5000/booking/${user?.email}`)
+    fetch(`https://damp-castle-34013.herokuapp.com/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setMyBooking(data));
   }, [user.email]);
@@ -27,11 +27,14 @@ const MyBooking = () => {
       .then((data) => {
         console.log(data);
 
-        if (data.deleteCount === 1) {
+        if (data.deleteCount == 1) {
           const remaining = myBooking.filter((booking) => booking._id !== id);
           setMyBooking(remaining);
           alert("Successfully deleted one document.");
         } 
+         else {
+          alert("No documents matched the query. Deleted 0 documents.");
+        }
       });
   };
 

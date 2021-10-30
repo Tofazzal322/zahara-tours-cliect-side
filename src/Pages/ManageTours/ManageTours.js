@@ -20,14 +20,14 @@ const ManageTours = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.deleteCount === 1) {
+        if (data.deleteCount == 1) {
           const remaining = manageTours?.filter((booked) => booked._id !== id);
           setManageTours(remaining);
           alert("Successfully deleted one document.");
         }
-        // else {
-        //   alert("No documents matched the query. Deleted 0 documents.");
-        // }
+        else {
+          alert("No documents matched the query. Deleted 0 documents.");
+        }
       });
   };
   ///////////////////////////////////
