@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
 
 const useData = () => {
   const [data, setData] = useState([]);
-  // console.log(data);
+  
 
   useEffect(() => {
     // fetch('/data.json')
@@ -10,7 +11,9 @@ const useData = () => {
       .then((res) => res.json())
       .then((data) => {
         if (!data) {
-          <p> Data Loading..........</p>;
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>;
         } else {
           setData(data);
         }

@@ -31,17 +31,18 @@ const Dashboard = () => {
                   >
                     Manage All Booking
                   </li>
-                  <li
-                    onClick={() => setControl("AddServices")}
-                    className="admin-menu  ms-5 pb-3 "
-                  >
-                    Add New Package
-                  </li>
+                 
                   <li
                     onClick={() => setControl("ManageAllService")}
-                    className="admin-menu  ms-5 "
+                    className="admin-menu pb-3   ms-5 "
                   >
                     Manage All Packages
+                  </li>
+                   <li
+                    onClick={() => setControl("AddServices")}
+                    className="admin-menu  ms-5 "
+                  >
+                    Add New Package
                   </li>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-// console.log(process.env);
+
 const firebaseConfig = {
   // apiKey: process.env.REACT_APP_API_KEY,
   // authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -7,6 +7,8 @@ const firebaseConfig = {
   // messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID, 
   // appId: process.env.REACT_APP_APP_ID
 
+  //  Env file not working on fire base , only working on Local server . ??
+  
   apiKey: "AIzaSyDb1wvuCceIWGnft0JIl-Jv9BNYCON_hfw",
   authDomain: "abeer-healthcare.firebaseapp.com",
   projectId: "abeer-healthcare",

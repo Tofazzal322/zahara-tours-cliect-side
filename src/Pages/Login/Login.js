@@ -4,7 +4,6 @@ import { Col, Form, Row } from "react-bootstrap";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import loginImg from "../../Images/banner5.jpg";
-// import "./Login.css";
 
 const Login = () => {
   const { signInWithGoogle, signInWithPassword } = useAuth();
@@ -55,7 +54,7 @@ const Login = () => {
           </Button>
           <br />
           <Button
-            className="google-btn mb-4 btn fw-bold w-100 btn-outline-danger"
+            className="google-btn mb-4 btn fw-bold w-100 btn-danger"
             onClick={handleGoogleLogin}
             variant="primary"
             type="button"

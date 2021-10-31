@@ -3,12 +3,11 @@ import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useData from "../../hooks/useData";
-// import Doctors from "../Doctors/Doctors";
-// import "./Service.css";
+
 
 const Services = () => {
   const { data } = useData();
-  // console.log(data);
+
   return (
     <div id="Services" className="container mt-2 mb-5">
       <div className="bookAppointmentBtn pb-4">
@@ -51,7 +50,7 @@ const Services = () => {
             </Row>
           ))}
       </div>
-      {/* <Doctors></Doctors> */}
+    
     </div>
   );
 };

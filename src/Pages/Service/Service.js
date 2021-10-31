@@ -3,7 +3,7 @@ import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useData from "../../hooks/useData";
-// import "./Service.css";
+
 
 const Service = () => {
   const { data } = useData();

@@ -1,5 +1,4 @@
-// import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useLocation,useHistory } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
@@ -7,15 +6,11 @@ const AddServices = () => {
   const { register, handleSubmit, reset } = useForm();
   const [status, setStatus] = useState(false);
 
-  const onSubmit = (data) => {
-    console.log(data);
+  // const location = useLocation();
+  // const history = useHistory();
+  // const redirect_uri = location.state?.from || "/packages";
 
-    // axios.post("http://localhost:5000/packages", data).then((res) => {
-    //   if (res.data.insertedId) {
-    //     alert("added successfully");
-    //     reset();
-    //   }
-    // })
+  const onSubmit = (data) => {
 
     fetch("https://damp-castle-34013.herokuapp.com/packages", {
       method: "POST",
@@ -24,16 +19,16 @@ const AddServices = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setStatus(!status);
         alert(" Successfully added your New tours ");
         reset();
+        // history.push(redirect_uri);
       })
       .catch((err) => console.log(err));
   };
   return (
     <form className=" addService-container  mb-5 pb-5" onSubmit={handleSubmit(onSubmit)}>
-      <h2 className="text-center mt-2">Add Tours & Package</h2>
+      <h2 className="text-center text-warning fw-bold fs-1 mb-2 mt-2">ADD NEW TOURS & PACKAGES</h2>
       <Row className="mb-3">
         <Col>
           <h5>Location *</h5>

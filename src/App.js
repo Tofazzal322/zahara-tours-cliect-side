@@ -19,6 +19,8 @@ import MyBooking from "./Pages/MyBooking/MyBooking";
 import ManageTours from "./Pages/ManageTours/ManageTours";
 import Packages from "./Pages/Packages/Packages";
 import Booking2 from "./Pages/Booking/Booking2";
+import UpdateBooking from "./Pages/UpdateBooking/UpdateBooking";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -56,11 +58,17 @@ function App() {
           <PrivateRoute  path="/booking/:bookId">
             <Booking></Booking>
           </PrivateRoute>
+          <PrivateRoute  path="/UpdateBooking/:bookId">
+            <UpdateBooking></UpdateBooking>
+          </PrivateRoute>
           <PrivateRoute  path="/booking2/:bookId2">
             <Booking2></Booking2>
           </PrivateRoute>
           <Route exact path="/about">
             <About></About>
+          </Route>
+          <Route exact path="/contact">
+           <Contact></Contact>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

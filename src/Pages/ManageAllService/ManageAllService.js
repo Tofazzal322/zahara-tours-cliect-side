@@ -1,14 +1,12 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
-import { Col, Row, Spinner } from "react-bootstrap";
+import { Col, Row, Spinner, Table } from "react-bootstrap";
 
 const ManageAllService = () => {
   const [managePackages, setManagePackages] = useState([]);
-  // console.log(managePackages);
 
   useEffect(() => {
-    // fetch("/data.json")
-      fetch("https://damp-castle-34013.herokuapp.com/packages/")
+    fetch("https://damp-castle-34013.herokuapp.com/packages/")
       .then((res) => res.json())
       .then((data) => {
         if (!data) {
@@ -31,6 +29,7 @@ const ManageAllService = () => {
       .then((data) => {
         console.log(data);
         if (data.deleteCount !== 1) {
+          alert("Are You Sure, Want To Delete This Package?");
           const remaining = managePackages?.filter(
             (packages) => packages._id !== id
           );
@@ -44,7 +43,7 @@ const ManageAllService = () => {
       });
   };
   return (
-    <div>
+    <div className="me-3 rounded mb-5">
       <h2 className="text-center text-danger fw-bold mt-2 mb-3">
         {" "}
         MANAGE ALL TOURS & PACKAGES{" "}
@@ -56,23 +55,35 @@ const ManageAllService = () => {
           {managePackages.length}
         </span>
       </h3>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Package </th>
+            <th>Package Key</th>
+            <th>Package Price</th>
+            <th>Package Location</th>
+            <th>User Action</th>
+          </tr>
+        </thead>
+      </Table>
 
       {managePackages.map((packages) => (
-        <Row className="py-2 bg-primary my-2 text-light">
+        <Row className="py-2 manage-all rounded fw-bold mb-3  text-center py-4 my-2 text-light">
+          <Col>{packages.title}</Col>
           <Col>{packages.key}</Col>
-          <Col>{packages.categories}</Col>
           <Col> {packages.price}</Col>
           <Col> {packages.location}</Col>
           <Col>
             <Button
               onClick={() => handleDelete(packages._id)}
-              className="btn btn-warning fw-bold me-2 text-dark"
+              className="btn btn-outline-warning fw-bold me-2 text-light"
             >
               Update
             </Button>
             <Button
               onClick={() => handleDelete(packages._id)}
-              className="btn btn-danger text-light fw-bold "
+              className="btn btn-outline-danger text-light fw-bold "
             >
               Delete
             </Button>

@@ -106,10 +106,7 @@
     border-radius: 5px;
 }
 
-.google-btn{
-    /* border: none; */
-    /* background-color: crimson; */
-}
+
 
 .forget-pass{
     /* text-align: auto; */
@@ -186,11 +183,10 @@
 /* Add service style */
 .addService-container{
     width: 75%;
-    /* justify-content: center; */
-    /* align-items: center; */
+  
     margin-left: auto;
     margin-right: auto;
-    /* text-align: center; */
+
 }
 
 /* Price style  */
@@ -199,9 +195,7 @@
     font-weight: bold;
     color: rgb(189, 20, 5);
     margin-left: 60px;
-    /* justify-content: right; */
-    /* align-items: flex-end; */
-    /* text-align: right !important; */
+   
 }
 
 .duration{
@@ -239,4 +233,52 @@ transition: 500ms;
 
 .carousel-caption{
     margin-bottom: 200px;
+}
+
+
+/*  Not Found Page style  */
+.not-found-body{
+    background-image: url('https://i.stack.imgur.com/6M513.png');
+}
+
+.goHome-btn{
+    width: 50%;
+    border: none;
+    background-color:#006576 ;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.goHome-btn:hover{
+    background-color:#e28409 ;
+}
+
+
+/*  Adventure section style  */
+.adventure-bg{
+    
+    background: url('https://ororesponsable.org/wp-content/themes/custom/img/bg-news-shadow.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.popular-bg{
+    background: url('https://thumbs.dreamstime.com/b/d-white-diagonal-striped-pattern-soft-shadow-light-bg-abstract-elegant-seamless-neumorphism-ui-style-minimal-embossed-207233154.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.action-td{
+    position: relative;
+}
+
+.manage-all{
+    background-color: #006576;
 }

@@ -1,63 +1,62 @@
 import React, { useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useParams, useLocation, useHistory } from "react-router-dom";
+import { useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
 
-const Booking2 = () => {
-  const [status, setStatus] = useState(false);
-  const { bookId2 } = useParams();
-  const [packages, setPackages] = useState({});
+const UpdateBooking = () => {
   const { user } = useAuth();
-
-  const location = useLocation();
-  const history = useHistory();
-  const redirect_uri = location.state?.from || "/packages";
-
   const { register, handleSubmit, reset } = useForm();
+  const { bookId } = useParams();
+  const [manageTours, setManageTours] = useState([]);
+    // console.log(bookId, manageTours);
+    
+    useEffect(() => {
+        const url = `https://damp-castle-34013.herokuapp.com/booking/${bookId}`;
+        fetch(url)
+            .then(res => res.json())
+        .then(data=>setManageTours(data))
+    },[bookId])
 
-  // /////// Specific items Api//////////////
-  useEffect(() => {
-    const url = `https://damp-castle-34013.herokuapp.com/packages/${bookId2}`;
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setPackages(data));
-  }, [bookId2]);
-  console.log(packages);
-  /////////////////////////////////////////////////////////////
 
-  // ////////////// Booking submit //////////////////////////////
+
 
   const onSubmit = (data) => {
-    fetch("https://damp-castle-34013.herokuapp.com/booking", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+    const url = `https://damp-castle-34013.herokuapp.com/booking/${bookId}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setStatus(!status);
-        alert("Successfully Booked Your Order");
-        reset();
-        history.push(redirect_uri);
-      })
-      .catch((err) => console.log(err));
+        setManageTours(data);
+        if (data.modifiedCount > 0) {
+          alert("Successfully Update one document.");
+          setManageTours({});
+          reset()
+        } else {
+          alert("No documents matched the query. Update 0 documents.");
+        }
+      });
+    // console.log("object");
   };
-  // /////////////////////////////////////////////
+
+    
+
 
   return (
     <div className="px-3 container">
-      <h2 className="text-center mt-2 text-danger">
-        This is Booking Page No-2
-      </h2>
+      <h2 className="text-center mt-2 text-danger">This is Booking 2 page</h2>
       <Row className="mt-5 ">
         <Col className="pe-5" xs={12} md={6}>
-          <Image className="w-100" src={packages.img} alt="" />
-          <h2>{packages.title}</h2>
-          <h4> {packages.price} </h4>
-          <h5> {packages.duration} </h5>
-          <p> {packages.description} </p>
+          <Image className="w-100" src={manageTours.img} alt="" />
+          <h2>{manageTours.title}</h2>
+          <h4> {manageTours.price} </h4>
+          <h5> {manageTours.duration} </h5>
+          <p> {manageTours.description} </p>
         </Col>
 
         <Col className=" booking-form  px-3 mb-5" xs={12} md={6}>
@@ -67,12 +66,12 @@ const Booking2 = () => {
                 {" "}
                 Starts From :{" "}
                 <span className="fs-4 text-warning fw-bold">
-                  {packages.price}
+                  {manageTours.price}
                 </span>
               </p>
             </div>
             <h3 className="mt-2 text-center ">
-              <span className="categories">{packages.categories}</span>{" "}
+              <span className="categories">{manageTours.categories}</span>{" "}
               <span className="">BOOKING</span>{" "}
             </h3>
 
@@ -82,7 +81,7 @@ const Booking2 = () => {
                 <input
                   type="text"
                   className="w-100 h-75"
-                  defaultValue={packages.title}
+                  defaultValue={manageTours.title || "Zahara Tours"}
                   {...register("title")}
                 />
               </Col>
@@ -93,6 +92,7 @@ const Booking2 = () => {
                 <h5>Email *</h5>
                 <input
                   className="w-100 h-75"
+               
                   defaultValue={user?.email}
                   {...register("email")}
                 />
@@ -101,6 +101,7 @@ const Booking2 = () => {
                 <h5>Name *</h5>
                 <input
                   className="w-100 h-75"
+              
                   defaultValue={user?.displayName}
                   {...register("name")}
                 />
@@ -112,7 +113,7 @@ const Booking2 = () => {
                 <input
                   type="text"
                   className="w-100 h-75"
-                  defaultValue={packages.key}
+                  defaultValue={manageTours.key}
                   {...register("key")}
                 />
               </Col>
@@ -165,4 +166,4 @@ const Booking2 = () => {
   );
 };
 
-export default Booking2;
+export default UpdateBooking;

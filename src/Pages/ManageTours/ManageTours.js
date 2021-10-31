@@ -1,6 +1,7 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
-import { Col,Row } from "react-bootstrap";
+import { Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 //////////////////////////////////////////////////
 const ManageTours = () => {
@@ -22,6 +23,7 @@ const ManageTours = () => {
       .then((data) => {
         console.log(data);
         if (data.deleteCount !== 1) {
+          alert(" Are you sure want to delete the items?");
           const remaining = manageTours?.filter((booked) => booked._id !== id);
           setManageTours(remaining);
 
@@ -32,29 +34,6 @@ const ManageTours = () => {
       });
   };
 
-  ///////////////////////////////////
-
-  const handleUpdate = (id) => {
-    const url = `https://damp-castle-34013.herokuapp.com/booking/${id}`;
-    fetch(url, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(manageTours),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.modifiedCount > 0) {
-          alert("Successfully Update one document.");
-          setManageTours({});
-        } else {
-          alert("No documents matched the query. Update 0 documents.");
-        }
-      });
-    console.log("object");
-  };
 
   // /////////////////////////////////////
 
@@ -65,33 +44,54 @@ const ManageTours = () => {
         TOTAL ITEMS: -{" "}
         <span className="text-danger fs-1 fw-bold"> {manageTours.length}</span>
       </h3>
-
-      {manageTours.map((booking) => (
-        <Row className="py-2 bg-primary my-2 text-light">
-          <Col>{booking.title}</Col>
-          <Col>{booking.email}</Col>
-          <Col> {booking.mobile}</Col>
-          <Col> {booking.name}</Col>
-          <Col>
+      <Table striped bordered hover>
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Package</th>
+          <th>Mobile</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      </Table>
+      
+      {manageTours.map((booking,index) => (
+        <Table striped bordered hover responsive>
+          
+          <tbody>
+            <tr>
+              <td>{index}</td>
+              <td>{booking.title}</td>
+              <td>{booking.mobile}</td>
+              <td>{booking.name}</td>
+              <td>{booking.email}</td>
+              <td className="action-td">
+                
+                <Link to={`/updateBooking/${booking._id}`}>
+              <Button
+                className="btn me-1 btn-dark fw-bold text-light"
+              >
+                Update
+              </Button>
+            </Link>
             <Button
               onClick={() => handleDelete(booking._id)}
-              className="btn me-1 btn-dark fw-bold text-light"
-            >
-              {" "}
-              Update
-            </Button>
-            <Button
-              onClick={() => handleUpdate(booking._id)}
               className="btn btn-warning fw-bold text-dark"
             >
               {" "}
               Delete
             </Button>
-          </Col>
-        </Row>
+              </td>
+            </tr>
+          </tbody>
+
+        </Table>
       ))}
     </div>
   );
 };
 
 export default ManageTours;
+
