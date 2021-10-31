@@ -6,7 +6,6 @@ import useData from "../../hooks/useData";
 
 const Packages = () => {
   const { data } = useData();
-  console.log(data);
   return (
     <div className="container">
       <h1> All Packages display here</h1>

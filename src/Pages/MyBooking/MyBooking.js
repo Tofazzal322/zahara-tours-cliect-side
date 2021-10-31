@@ -5,7 +5,6 @@ import useFirebase from "../../hooks/useFirebase";
 
 const MyBooking = () => {
   const { user } = useFirebase();
-  // const { data, setData } = useState;
     console.log(user.email);
   const [myBooking, setMyBooking] = useState([]);
 

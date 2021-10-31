@@ -8,7 +8,7 @@ import useData from "../../hooks/useData";
 
 const Services = () => {
   const { data } = useData();
-  console.log(data);
+  // console.log(data);
   return (
     <div id="Services" className="container mt-2 mb-5">
       <div className="bookAppointmentBtn pb-4">

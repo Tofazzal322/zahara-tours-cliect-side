@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 // import Packages from "../Packages/Packages";
 

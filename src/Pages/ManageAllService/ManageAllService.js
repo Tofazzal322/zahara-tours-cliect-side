@@ -4,8 +4,7 @@ import { Col, Row } from "react-bootstrap";
 
 const ManageAllService = () => {
 const [managePackages, setManagePackages] = useState([]);
-  // const [data, setData] = useState([]);
-  console.log(managePackages);
+  // console.log(managePackages);
 
   useEffect(() => {
     // fetch('/data.json')
@@ -42,7 +41,7 @@ const [managePackages, setManagePackages] = useState([]);
   };
   return (
     <div>
-      <h2 className="text-center text-danger fw-bold mt-2 mb-3"> MANAGE ALL Packages & PACKAGES </h2>
+      <h2 className="text-center text-danger fw-bold mt-2 mb-3"> MANAGE ALL TOURS & PACKAGES </h2>
       <h3 className="text-center">
         TOTAL ITEMS: -{" "}
         <span className="text-danger fs-1 fw-bold"> {managePackages.length}</span>
