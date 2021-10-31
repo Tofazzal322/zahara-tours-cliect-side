@@ -7,8 +7,8 @@ const ManageAllService = () => {
   // console.log(managePackages);
 
   useEffect(() => {
-    fetch("/data.json")
-      // fetch("https://damp-castle-34013.herokuapp.com/packages/")
+    // fetch("/data.json")
+      fetch("https://damp-castle-34013.herokuapp.com/packages/")
       .then((res) => res.json())
       .then((data) => {
         if (!data) {
