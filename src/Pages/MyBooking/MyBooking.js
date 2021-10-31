@@ -73,7 +73,7 @@ const MyBooking = () => {
           <Col> {booking.email}</Col>
           <Col> {booking.name}</Col>
           <Col >
-            <Link to="packages ">
+            <Link to="/packages">
               <Button className="btn  me-2 btn-warning fw-bold text-dark">
                 {" "}
                 More

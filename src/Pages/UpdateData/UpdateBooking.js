@@ -72,7 +72,7 @@ const UpdateBooking = () => {
             </div>
             <h3 className="mt-2 text-center ">
               <span className="categories">{manageTours.categories}</span>{" "}
-              <span className="">BOOKING</span>{" "}
+              <span className="">UPDATE BOOKING</span>{" "}
             </h3>
 
             <Row className="mb-3">
@@ -81,7 +81,7 @@ const UpdateBooking = () => {
                 <input
                   type="text"
                   className="w-100 h-75"
-                  defaultValue={manageTours.title || "Zahara Tours"}
+                  defaultValue={manageTours.title}
                   {...register("title")}
                 />
               </Col>
@@ -92,7 +92,6 @@ const UpdateBooking = () => {
                 <h5>Email *</h5>
                 <input
                   className="w-100 h-75"
-               
                   defaultValue={user?.email}
                   {...register("email")}
                 />
@@ -101,7 +100,6 @@ const UpdateBooking = () => {
                 <h5>Name *</h5>
                 <input
                   className="w-100 h-75"
-              
                   defaultValue={user?.displayName}
                   {...register("name")}
                 />
@@ -109,12 +107,13 @@ const UpdateBooking = () => {
             </Row>
             <Row className="mt-4">
               <Col>
-                <h5>Key *</h5>
+                <h5>Status *</h5>
                 <input
                   type="text"
                   className="w-100 h-75"
-                  defaultValue={manageTours.key}
-                  {...register("key")}
+                  // defaultValue={manageTours.key}
+                  placeholder="Pending"
+                  {...register("status")}
                 />
               </Col>
               <Col>
