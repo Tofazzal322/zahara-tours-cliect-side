@@ -12,9 +12,6 @@ const ManageTours = () => {
       .then((data) => setManageTours(data));
   }, [manageTours]);
 
-  
-
-
   /////////////// /////////////////////////////////
   const handleDelete = (id) => {
     const url = `https://damp-castle-34013.herokuapp.com/booking/${id}`;
@@ -27,15 +24,39 @@ const ManageTours = () => {
         if (data.deleteCount !== 1) {
           const remaining = manageTours?.filter((booked) => booked._id !== id);
           setManageTours(remaining);
-        
+
           alert("Successfully deleted one document.");
-        }
-        else {
+        } else {
           alert("No documents matched the query. Deleted 0 documents.");
         }
       });
   };
+
   ///////////////////////////////////
+
+  const handleUpdate = (id) => {
+    const url = `https://damp-castle-34013.herokuapp.com/booking/${id}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(manageTours),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount > 0) {
+          alert("Successfully Update one document.");
+          setManageTours({});
+        } else {
+          alert("No documents matched the query. Update 0 documents.");
+        }
+      });
+    console.log("object");
+  };
+
+  // /////////////////////////////////////
 
   return (
     <div>
@@ -54,6 +75,13 @@ const ManageTours = () => {
           <Col>
             <Button
               onClick={() => handleDelete(booking._id)}
+              className="btn me-1 btn-dark fw-bold text-light"
+            >
+              {" "}
+              Update
+            </Button>
+            <Button
+              onClick={() => handleUpdate(booking._id)}
               className="btn btn-warning fw-bold text-dark"
             >
               {" "}

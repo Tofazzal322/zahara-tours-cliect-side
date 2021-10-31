@@ -1,25 +1,27 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Spinner } from "react-bootstrap";
 
 const ManageAllService = () => {
-const [managePackages, setManagePackages] = useState([]);
+  const [managePackages, setManagePackages] = useState([]);
   // console.log(managePackages);
 
   useEffect(() => {
-    // fetch('/data.json')
-    fetch("https://damp-castle-34013.herokuapp.com/packages")
+    fetch("/data.json")
+      // fetch("https://damp-castle-34013.herokuapp.com/packages/")
       .then((res) => res.json())
       .then((data) => {
         if (!data) {
-          
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>;
         } else {
           setManagePackages(data);
         }
       });
   }, []);
 
-  // ///////////////////////// 
+  // /////////////////////////
   const handleDelete = (id) => {
     const url = `https://damp-castle-34013.herokuapp.com/packages/${id}`;
     fetch(url, {
@@ -29,9 +31,11 @@ const [managePackages, setManagePackages] = useState([]);
       .then((data) => {
         console.log(data);
         if (data.deleteCount !== 1) {
-          const remaining = managePackages?.filter((packages) => packages._id !== id);
-         setManagePackages(remaining);
-          
+          const remaining = managePackages?.filter(
+            (packages) => packages._id !== id
+          );
+          setManagePackages(remaining);
+
           alert("Successfully deleted one document.");
         }
         // else {
@@ -41,10 +45,16 @@ const [managePackages, setManagePackages] = useState([]);
   };
   return (
     <div>
-      <h2 className="text-center text-danger fw-bold mt-2 mb-3"> MANAGE ALL TOURS & PACKAGES </h2>
+      <h2 className="text-center text-danger fw-bold mt-2 mb-3">
+        {" "}
+        MANAGE ALL TOURS & PACKAGES{" "}
+      </h2>
       <h3 className="text-center">
         TOTAL ITEMS: -{" "}
-        <span className="text-danger fs-1 fw-bold"> {managePackages.length}</span>
+        <span className="text-danger fs-1 fw-bold">
+          {" "}
+          {managePackages.length}
+        </span>
       </h3>
 
       {managePackages.map((packages) => (
@@ -56,9 +66,14 @@ const [managePackages, setManagePackages] = useState([]);
           <Col>
             <Button
               onClick={() => handleDelete(packages._id)}
-              className="btn btn-warning fw-bold text-dark"
+              className="btn btn-warning fw-bold me-2 text-dark"
             >
-              
+              Update
+            </Button>
+            <Button
+              onClick={() => handleDelete(packages._id)}
+              className="btn btn-danger text-light fw-bold "
+            >
               Delete
             </Button>
           </Col>
