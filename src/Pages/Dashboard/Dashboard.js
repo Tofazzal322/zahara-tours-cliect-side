@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddServices from "../AddServices/AddServices";
 import MyBooking from "../MyBooking/MyBooking";
-import ManageTours from "../ManageTours/ManageTours";
+import ManageTours from "../ManageAllBooking/ManageTours";
 import ManageAllService from "../ManageAllService/ManageAllService";
 
 const Dashboard = () => {

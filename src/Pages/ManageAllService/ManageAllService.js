@@ -1,6 +1,7 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
 import { Col, Row, Spinner, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ManageAllService = () => {
   const [managePackages, setManagePackages] = useState([]);
@@ -42,6 +43,9 @@ const ManageAllService = () => {
         // }
       });
   };
+
+
+
   return (
     <div className="me-3 rounded mb-5">
       <h2 className="text-center text-danger fw-bold mt-2 mb-3">
@@ -69,18 +73,20 @@ const ManageAllService = () => {
       </Table>
 
       {managePackages.map((packages) => (
-        <Row className="py-2 manage-all rounded fw-bold mb-3  text-center py-4 my-2 text-light">
+        <Row key={packages.key} className="py-2 manage-all rounded fw-bold mb-3  text-center py-4 my-2 text-light">
           <Col>{packages.title}</Col>
           <Col>{packages.key}</Col>
           <Col> {packages.price}</Col>
           <Col> {packages.location}</Col>
           <Col>
-            <Button
-              onClick={() => handleDelete(packages._id)}
+            <Link to={`/updatePackages/${packages._id}`}>
+               <Button
+              // onClick={() => handleDelete(packages._id)}
               className="btn btn-outline-warning fw-bold me-2 text-light"
             >
               Update
             </Button>
+           </Link>
             <Button
               onClick={() => handleDelete(packages._id)}
               className="btn btn-outline-danger text-light fw-bold "

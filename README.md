@@ -1,11 +1,14 @@
 # Welcome to zahara tours & travels 
 
-project private repo link [Zahara Tours ](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Tofazzal322.git).
+project private repo link [Zahara Tours ](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Tofazzal322).
+
+## Zahara Tours Server Site Link 
+ [Live Site Link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-Tofazzal322)
+
+
 
 ## Live site Link 
- [Live Site Link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Tofazzal322.git)
-
- 
+ [Live Site Link](https://zahara-tours.web.app/)
 
 
  #### In This Projects Used 
