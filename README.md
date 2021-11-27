@@ -1,14 +1,26 @@
 # Welcome to zahara tours & travels 
 
-project private repo link [Zahara Tours ](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Tofazzal322).
+#### Project Overview
+1. Zahara tours practice projects. Normal users can explore the services and packages.
+2. Logged-in users can be book services & packages and manage booked orders.
+3. Admin can add new products, make a new admin, confirm and delete any orders and
+admin can manage all products.
+4. Implemented MongoDB for data stored and Firebase Authentication System for login.
+5. #### Technology used:
+    HTML5, CSS3, Javascript, React.js, Node.js, Express.js, React Bootstrap
+        Webpack, React hook form, React router dom.
+
+## Zahara Tours Client Side Link
+Project repo link [Zahara Tours Client Side Link ](https://github.com/Tofazzal322/zahara-tours-react-interactive-website).
 
 ## Zahara Tours Server Site Link 
- [Live Site Link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-Tofazzal322)
+ [Live Site Link](https://github.com/Tofazzal322/zahara-tours-interactive-website-server)
 
 
 
 ## Live site Link 
  [Live Site Link](https://zahara-tours.web.app/)
+
 
 
  #### In This Projects Used 
