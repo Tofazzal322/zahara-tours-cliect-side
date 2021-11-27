@@ -11,10 +11,11 @@ admin can manage all products.
         Webpack, React hook form, React router dom.
 
 ## Zahara Tours Client Side Link
-Project repo link [Zahara Tours Client Side Link ](https://github.com/Tofazzal322/zahara-tours-react-interactive-website).
+Project repo link 
+[Zahara Tours Client Side Link ](https://github.com/Tofazzal322/zahara-tours-cliect-side).
 
 ## Zahara Tours Server Site Link 
- [Live Site Link](https://github.com/Tofazzal322/zahara-tours-interactive-website-server)
+ [Zahara tours server side Link](https://github.com/Tofazzal322/zahara-tours-interactive-website-server)
 
 
 
